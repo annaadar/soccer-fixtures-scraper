@@ -1,0 +1,23 @@
+{
+  "name": "soccer-fixtures-scraper",
+  "version": "1.0.0",
+  "description": "script scraping upcoming soccer fixtures dates",
+  "type": "module",
+  "module": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.cjs",
+    "build-watch": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.cjs --watch",
+    "scrape": "node dist/index.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^24.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.3"
+  }
+}

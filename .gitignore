@@ -1,0 +1,4 @@
+node_modules/
+src/constants.ts
+dates.json
+/dist
